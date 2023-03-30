@@ -43,9 +43,42 @@ class UserController extends Controller
      *     tags={"Users"},
      *     operationId="Criar",
      *     @OA\Response(
-     *         response=200,
+     *         response=201,
      *         description="successful operation"
      *     ),
+     *      @OA\RequestBody(
+     *         @OA\MediaType(
+     *             mediaType="application/x-www-form-urlencoded",
+     *             @OA\Schema(
+     *                 type="object",
+                        @OA\Property(
+     *                     property="name",
+     *                     description="Nome",
+     *                     type="string",
+     *                 ),
+     *                 @OA\Property(
+     *                     property="password",
+     *                     description="Senha",
+     *                     type="string"
+     *                 ),
+     *                         @OA\Property(
+     *                     property="email",
+     *                     description="Email",
+     *                     type="string",
+     *                 ),
+     *                         @OA\Property(
+     *                     property="cpf",
+     *                     description="cpf",
+     *                     type="string",
+     *                 ),
+     *                         @OA\Property(
+     *                     property="telephone",
+     *                     description="telefone",
+     *                     type="string",
+     *                 ),
+     *             )
+     *         )
+     *     )
      * )
      */
 

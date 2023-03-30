@@ -18,6 +18,24 @@ class AuthController extends Controller
      *         response=200,
      *         description="successful operation"
      *     ),
+     *     @OA\RequestBody(
+     *         @OA\MediaType(
+     *             mediaType="application/x-www-form-urlencoded",
+     *             @OA\Schema(
+     *                 type="object",
+                        @OA\Property(
+     *                     property="email",
+     *                     description="Email",
+     *                     type="string",
+     *                 ),
+     *                 @OA\Property(
+     *                     property="password",
+     *                     description="Senha",
+     *                     type="string"
+     *                 )
+     *             )
+     *         )
+     *     )
      * )
      */
     public function login(Request $request) {

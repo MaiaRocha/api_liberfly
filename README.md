@@ -53,6 +53,13 @@ Este projeto foi desenvolvido com as seguintes versões:
 > php artisan serve
 
 
+## Dados de acesso para o endpoint de Login
+
+> {
+>    "password": "liberfly",
+>    "email": "liberfly@gmail.com"
+>_  }
+
 
 Feito com 💜 por Romaria Oliveira 👋 [Veja meu Linkedin](https://www.linkedin.com/in/romariadev/)
 <br>

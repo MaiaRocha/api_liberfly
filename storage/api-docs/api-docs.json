@@ -12,6 +12,25 @@
                 ],
                 "summary": "Logar usuario.",
                 "operationId": "Login",
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "properties": {
+                                    "email": {
+                                        "description": "Email",
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "description": "Senha",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "successful operation"
@@ -38,8 +57,39 @@
                 ],
                 "summary": "Criar usuarios.",
                 "operationId": "Criar",
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "Nome",
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "description": "Senha",
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "description": "Email",
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "description": "cpf",
+                                        "type": "string"
+                                    },
+                                    "telephone": {
+                                        "description": "telefone",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
                 "responses": {
-                    "200": {
+                    "201": {
                         "description": "successful operation"
                     }
                 }
