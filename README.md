@@ -1,6 +1,6 @@
 <h1 align="center"> API Liberfly </h1>
 
-<img src="https://i.ibb.co/k2sDPN3/companypagedetail-ea49d0b7-c912-41ce-8cf7-c8cdded19e87.png" alt="api_liberfly">
+<img src="https://i.ibb.co/4pFmFj4/download.png" alt="api_liberfly">
 
 # Padrão de projeto utilizado
 
