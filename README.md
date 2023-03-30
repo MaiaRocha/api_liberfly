@@ -5,7 +5,7 @@
 # Padrão de projeto utilizado
 
 ### - Padrão API RESTFULL
-
+### - Authenticação JWT
 
 # Documentação
 
