@@ -7,6 +7,19 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
+        /**
+     * Logar usuario.
+     *
+     * @OA\Post(
+     *     path="/auth/login",
+     *     tags={"Auth"},
+     *     operationId="Login",
+     *     @OA\Response(
+     *         response=200,
+     *         description="successful operation"
+     *     ),
+     * )
+     */
     public function login(Request $request) {
 
         $email = $request->email;

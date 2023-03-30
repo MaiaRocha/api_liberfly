@@ -11,6 +11,19 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+            /**
+     * Listar usuarios.
+     *
+     * @OA\Get(
+     *     path="/users/",
+     *     tags={"Users"},
+     *     operationId="Listar",
+     *     @OA\Response(
+     *         response=200,
+     *         description="successful operation"
+     *     ),
+     * )
+     */
     // Metodo que lista usuários
     public function index()
     {
@@ -21,6 +34,20 @@ class UserController extends Controller
             return response()->json(['errors' => ['Erro ao listar usuários']], 400);
         }
     }
+
+                /**
+     * Criar usuarios.
+     *
+     * @OA\Post(
+     *     path="/users/",
+     *     tags={"Users"},
+     *     operationId="Criar",
+     *     @OA\Response(
+     *         response=200,
+     *         description="successful operation"
+     *     ),
+     * )
+     */
 
     // Metodo que cria usuário
     public function store(StoreUserRequest $request)
@@ -43,6 +70,20 @@ class UserController extends Controller
             return response()->json(['errors' => ['Erro ao criar o usuário']], 400);
         }
     }
+
+                    /**
+     * listar usuário pelo ID.
+     *
+     * @OA\Get(
+     *     path="/users/{id}",
+     *     tags={"Users"},
+     *     operationId="Listar Pelo ID",
+     *     @OA\Response(
+     *         response=200,
+     *         description="successful operation"
+     *     ),
+     * )
+     */
 
     // Metodo que lista usuário pelo ID
     public function show($id)
