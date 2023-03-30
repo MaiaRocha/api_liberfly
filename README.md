@@ -58,9 +58,10 @@ Este projeto foi desenvolvido com as seguintes versões:
 > {
 >    "password": "liberfly",
 >    "email": "liberfly@gmail.com"
->_  }
+>  }
 
-
+<br>
+<br>
 Feito com 💜 por Romaria Oliveira 👋 [Veja meu Linkedin](https://www.linkedin.com/in/romariadev/)
 <br>
 
